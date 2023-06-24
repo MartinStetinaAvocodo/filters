@@ -1,7 +1,7 @@
 import { KawaseBlurFilter } from '@pixi/filter-kawase-blur';
 import { vertex } from '@tools/fragments';
 import fragment from './dropshadow.frag';
-import { Filter, settings, DEG_TO_RAD, ObservablePoint, utils } from '@pixi/core';
+import { Color, Filter, DEG_TO_RAD, ObservablePoint, utils } from '@pixi/core';
 import type { IPoint, CLEAR_MODES, FilterSystem, RenderTexture, IPointData } from '@pixi/core';
 
 type PixelSizeValue = number | number[] | IPoint;
@@ -43,7 +43,7 @@ class DropShadowFilter extends Filter
         blur: 2,
         quality: 3,
         pixelSize: 1,
-        resolution: settings.FILTER_RESOLUTION,
+        resolution: Filter.defaultResolution,
     };
 
     /** Hide the contents, only show the shadow. */
@@ -60,7 +60,7 @@ class DropShadowFilter extends Filter
     private _distance = 5;
     private _tintFilter: Filter;
     private _blurFilter: KawaseBlurFilter;
-    protected _resolution: number = settings.FILTER_RESOLUTION;
+    protected _resolution: number = Filter.defaultResolution;
 
     /**
      * @param {object} [options] - Filter options
@@ -251,7 +251,8 @@ class DropShadowFilter extends Filter
     }
     set color(value: number)
     {
-        utils.hex2rgb(value, this._tintFilter.uniforms.color);
+        // utils.hex2rgb(value, this._tintFilter.uniforms.color);
+        this._tintFilter.uniforms.color = new Color(value).toRgbArray();
     }
 
     /**

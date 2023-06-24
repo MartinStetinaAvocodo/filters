@@ -1,11 +1,11 @@
 {
-  "name": "@pixi/filter-drop-shadow",
-  "version": "5.2.0",
+  "name": "@martin-stetina-unchained/filter-drop-shadow",
+  "version": "5.2.2",
   "main": "./dist/filter-drop-shadow.js",
   "description": "PixiJS filter to apply a drop shadow effect",
-  "author": "Mat Groves",
+  "author": "Martin Stetina",
   "contributors": [
-    "Matt Karl <matt@mattkarl.com>"
+    "Martin Stetina <stetina.martin.boss@gmail.com>"
   ],
   "module": "./dist/filter-drop-shadow.mjs",
   "exports": {
@@ -21,7 +21,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixijs/filters.git",
+    "url": "https://github.com/MartinStetinaAvocodo/filters.git",
     "directory": "filters/drop-shadow"
   },
   "publishConfig": {
@@ -35,7 +35,7 @@
     "@pixi/filter-kawase-blur": "PIXI.filters"
   },
   "dependencies": {
-    "@pixi/filter-kawase-blur": "5.1.1"
+    "@pixi/filter-kawase-blur": "^5.1.1"
   },
   "peerDependencies": {
     "@pixi/core": "^7.0.0-X"

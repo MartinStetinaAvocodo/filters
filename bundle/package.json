@@ -1,13 +1,10 @@
 {
-  "name": "pixi-filters",
-  "version": "5.2.1",
+  "name": "@martin-stetina-unchained/filters",
+  "version": "5.2.2",
   "description": "PixiJS v7 optional display filters",
-  "author": "Mat Groves <mat@goodboydigital.com>",
+  "author": "Martin Stetina",
   "contributors": [
-    "Ivan Popelyshev <ivan.popelyshev@gmail.com>",
-    "Matt Karl <matt@mattkarl.com>",
-    "Chad Engler <chad@pantherdev.com>",
-    "finscn <finscn@gmail.com>"
+    "Martin Stetina <stetina.martin.boss@gmail.com>"
   ],
   "main": "./dist/cjs/pixi-filters.js",
   "module": "./dist/esm/pixi-filters.mjs",
@@ -26,7 +23,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixijs/filters.git",
+    "url": "https://github.com/MartinStetinaAvocodo/filters.git",
     "directory": "bundle"
   },
   "files": [
@@ -35,40 +32,6 @@
     "index.d.ts"
   ],
   "dependencies": {
-    "@pixi/filter-adjustment": "5.1.1",
-    "@pixi/filter-advanced-bloom": "5.1.1",
-    "@pixi/filter-ascii": "5.1.1",
-    "@pixi/filter-bevel": "5.1.1",
-    "@pixi/filter-bloom": "5.1.1",
-    "@pixi/filter-bulge-pinch": "5.1.1",
-    "@pixi/filter-color-gradient": "5.2.0",
-    "@pixi/filter-color-map": "5.1.1",
-    "@pixi/filter-color-overlay": "5.1.1",
-    "@pixi/filter-color-replace": "5.1.1",
-    "@pixi/filter-convolution": "5.1.1",
-    "@pixi/filter-cross-hatch": "5.1.1",
-    "@pixi/filter-crt": "5.1.1",
-    "@pixi/filter-dot": "5.1.1",
-    "@pixi/filter-drop-shadow": "5.2.0",
-    "@pixi/filter-emboss": "5.1.1",
-    "@pixi/filter-glitch": "5.1.1",
-    "@pixi/filter-glow": "5.2.1",
-    "@pixi/filter-godray": "5.1.1",
-    "@pixi/filter-grayscale": "5.1.1",
-    "@pixi/filter-hsl-adjustment": "5.2.0",
-    "@pixi/filter-kawase-blur": "5.1.1",
-    "@pixi/filter-motion-blur": "5.1.1",
-    "@pixi/filter-multi-color-replace": "5.1.1",
-    "@pixi/filter-old-film": "5.1.1",
-    "@pixi/filter-outline": "5.2.0",
-    "@pixi/filter-pixelate": "5.1.1",
-    "@pixi/filter-radial-blur": "5.1.1",
-    "@pixi/filter-reflection": "5.1.1",
-    "@pixi/filter-rgb-split": "5.1.1",
-    "@pixi/filter-shockwave": "5.1.1",
-    "@pixi/filter-simple-lightmap": "5.1.1",
-    "@pixi/filter-tilt-shift": "5.2.0",
-    "@pixi/filter-twist": "5.1.1",
-    "@pixi/filter-zoom-blur": "5.1.1"
+    "@martin-stetina-unchained/filter-drop-shadow": "5.2.2"
   }
 }
